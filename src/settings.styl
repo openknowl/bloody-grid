@@ -1,0 +1,49 @@
+// Stylus compile-time options
+
+/**
+ * $classname : class name for a bloody-grid to initiate.
+*/
+
+$classname = '.bloody-grid'
+
+/**
+ * $prefix : prefix name for the bloody-grid data attributes.
+*/
+
+$prefix = 'bg'
+
+/**  
+ * $columns : Number of columns available.
+ * $column-info : Each settings per columns: (
+        <no. columns> : Natural number defining the count of columns
+        <no. rows> : Natural number defining the maximum count of rows
+        <min-width> : Natural number in pixels defining the min-width of client size
+        <max-width> : Natural number in pixels defining the max-width of client size, 0 for no limitation.
+   )
+*/
+
+$columns = 3 5 7
+$column-info = (3 10 0 800px) (5 6 801px 1400px) (7 4 1401px 0)
+
+/**  
+ * $default-column : Number of columns as a default fallback. (No @media available browsers.)
+*/
+
+$default-column = 5
+/**
+ * $box-ratio : width over height ratio of the grid.
+*/
+
+$box-ratio = 100%
+
+/**
+ * $box-grid-w : Maximum number of the width occupied by a single grid cell.
+*/
+
+$box-grid-w = 2
+
+/**
+ * $box-grid-w : Maximum number of the width occupied by a single grid cell.
+*/
+
+$box-grid-h = 2
