@@ -33,8 +33,13 @@ define-context($column-count)
 	
 	// Define container height. 
 	for $container-row in (1 .. $row-count)
-		{$classname}[data-{$prefix}-rows-{$column-count}={'"' + $container-row + '"'}]:after
-			margin-top: $box-ratio * ($row-count / $column-count)
+		{$classname}[data-{$prefix}-rows-{$column-count}={'"' + $container-row + '"'}]
+			&:after
+				margin-top: $box-ratio * ($container-row / $column-count)
+			
+			for $i in (1 .. $box-grid-h)
+				& [data-{$prefix}-size$={'"x' + $i + '"'}]
+					height: ((100 / $container-row) * $i)%
 	
 	// Define columns. 
 	for $column in (0 ... $column-count)
@@ -50,10 +55,6 @@ define-context($column-count)
 	for $i in (1 .. $box-grid-w)
 		{$classname} [data-{$prefix}-size^={'"' + $i + 'x"'}]
 			width: ((100 / $column-count) * $i)%
-	
-	for $i in (1 .. $box-grid-h)
-		{$classname} [data-{$prefix}-size$={'"x' + $i + '"'}]
-			height: ((100 / $row-count) * $i)%
 
 media-context($column-count)
 	$min-width = hash($column-info, $column-count, 2)

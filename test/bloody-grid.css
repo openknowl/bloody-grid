@@ -16,22 +16,58 @@
   display: none;
 }
 .bloody-grid[data-bg-rows-5="1"]:after {
-  margin-top: 120%;
+  margin-top: 20%;
+}
+.bloody-grid[data-bg-rows-5="1"] [data-bg-size$="x1"] {
+  height: 100%;
+}
+.bloody-grid[data-bg-rows-5="1"] [data-bg-size$="x2"] {
+  height: 200%;
 }
 .bloody-grid[data-bg-rows-5="2"]:after {
-  margin-top: 120%;
+  margin-top: 40%;
+}
+.bloody-grid[data-bg-rows-5="2"] [data-bg-size$="x1"] {
+  height: 50%;
+}
+.bloody-grid[data-bg-rows-5="2"] [data-bg-size$="x2"] {
+  height: 100%;
 }
 .bloody-grid[data-bg-rows-5="3"]:after {
-  margin-top: 120%;
+  margin-top: 60%;
+}
+.bloody-grid[data-bg-rows-5="3"] [data-bg-size$="x1"] {
+  height: 33.333333333333336%;
+}
+.bloody-grid[data-bg-rows-5="3"] [data-bg-size$="x2"] {
+  height: 66.66666666666667%;
 }
 .bloody-grid[data-bg-rows-5="4"]:after {
-  margin-top: 120%;
+  margin-top: 80%;
+}
+.bloody-grid[data-bg-rows-5="4"] [data-bg-size$="x1"] {
+  height: 25%;
+}
+.bloody-grid[data-bg-rows-5="4"] [data-bg-size$="x2"] {
+  height: 50%;
 }
 .bloody-grid[data-bg-rows-5="5"]:after {
-  margin-top: 120%;
+  margin-top: 100%;
+}
+.bloody-grid[data-bg-rows-5="5"] [data-bg-size$="x1"] {
+  height: 20%;
+}
+.bloody-grid[data-bg-rows-5="5"] [data-bg-size$="x2"] {
+  height: 40%;
 }
 .bloody-grid[data-bg-rows-5="6"]:after {
   margin-top: 120%;
+}
+.bloody-grid[data-bg-rows-5="6"] [data-bg-size$="x1"] {
+  height: 16.666666666666668%;
+}
+.bloody-grid[data-bg-rows-5="6"] [data-bg-size$="x2"] {
+  height: 33.333333333333336%;
 }
 .bloody-grid [data-bg-5^="0,"] {
   left: 0%;
@@ -72,45 +108,99 @@
 .bloody-grid [data-bg-size^="2x"] {
   width: 40%;
 }
-.bloody-grid [data-bg-size$="x1"] {
-  height: 16.666666666666668%;
-}
-.bloody-grid [data-bg-size$="x2"] {
-  height: 33.333333333333336%;
-}
 @media only screen and (max-width:800px) {
   .bloody-grid [data-bg-3="hide"] {
     display: none;
   }
   .bloody-grid[data-bg-rows-3="1"]:after {
-    margin-top: 333.33333333333337%;
+    margin-top: 33.33333333333333%;
+  }
+  .bloody-grid[data-bg-rows-3="1"] [data-bg-size$="x1"] {
+    height: 100%;
+  }
+  .bloody-grid[data-bg-rows-3="1"] [data-bg-size$="x2"] {
+    height: 200%;
   }
   .bloody-grid[data-bg-rows-3="2"]:after {
-    margin-top: 333.33333333333337%;
+    margin-top: 66.66666666666666%;
+  }
+  .bloody-grid[data-bg-rows-3="2"] [data-bg-size$="x1"] {
+    height: 50%;
+  }
+  .bloody-grid[data-bg-rows-3="2"] [data-bg-size$="x2"] {
+    height: 100%;
   }
   .bloody-grid[data-bg-rows-3="3"]:after {
-    margin-top: 333.33333333333337%;
+    margin-top: 100%;
+  }
+  .bloody-grid[data-bg-rows-3="3"] [data-bg-size$="x1"] {
+    height: 33.333333333333336%;
+  }
+  .bloody-grid[data-bg-rows-3="3"] [data-bg-size$="x2"] {
+    height: 66.66666666666667%;
   }
   .bloody-grid[data-bg-rows-3="4"]:after {
-    margin-top: 333.33333333333337%;
+    margin-top: 133.33333333333331%;
+  }
+  .bloody-grid[data-bg-rows-3="4"] [data-bg-size$="x1"] {
+    height: 25%;
+  }
+  .bloody-grid[data-bg-rows-3="4"] [data-bg-size$="x2"] {
+    height: 50%;
   }
   .bloody-grid[data-bg-rows-3="5"]:after {
-    margin-top: 333.33333333333337%;
+    margin-top: 166.66666666666669%;
+  }
+  .bloody-grid[data-bg-rows-3="5"] [data-bg-size$="x1"] {
+    height: 20%;
+  }
+  .bloody-grid[data-bg-rows-3="5"] [data-bg-size$="x2"] {
+    height: 40%;
   }
   .bloody-grid[data-bg-rows-3="6"]:after {
-    margin-top: 333.33333333333337%;
+    margin-top: 200%;
+  }
+  .bloody-grid[data-bg-rows-3="6"] [data-bg-size$="x1"] {
+    height: 16.666666666666668%;
+  }
+  .bloody-grid[data-bg-rows-3="6"] [data-bg-size$="x2"] {
+    height: 33.333333333333336%;
   }
   .bloody-grid[data-bg-rows-3="7"]:after {
-    margin-top: 333.33333333333337%;
+    margin-top: 233.33333333333334%;
+  }
+  .bloody-grid[data-bg-rows-3="7"] [data-bg-size$="x1"] {
+    height: 14.285714285714286%;
+  }
+  .bloody-grid[data-bg-rows-3="7"] [data-bg-size$="x2"] {
+    height: 28.571428571428573%;
   }
   .bloody-grid[data-bg-rows-3="8"]:after {
-    margin-top: 333.33333333333337%;
+    margin-top: 266.66666666666663%;
+  }
+  .bloody-grid[data-bg-rows-3="8"] [data-bg-size$="x1"] {
+    height: 12.5%;
+  }
+  .bloody-grid[data-bg-rows-3="8"] [data-bg-size$="x2"] {
+    height: 25%;
   }
   .bloody-grid[data-bg-rows-3="9"]:after {
-    margin-top: 333.33333333333337%;
+    margin-top: 300%;
+  }
+  .bloody-grid[data-bg-rows-3="9"] [data-bg-size$="x1"] {
+    height: 11.11111111111111%;
+  }
+  .bloody-grid[data-bg-rows-3="9"] [data-bg-size$="x2"] {
+    height: 22.22222222222222%;
   }
   .bloody-grid[data-bg-rows-3="10"]:after {
     margin-top: 333.33333333333337%;
+  }
+  .bloody-grid[data-bg-rows-3="10"] [data-bg-size$="x1"] {
+    height: 10%;
+  }
+  .bloody-grid[data-bg-rows-3="10"] [data-bg-size$="x2"] {
+    height: 20%;
   }
   .bloody-grid [data-bg-3^="0,"] {
     left: 0%;
@@ -157,28 +247,46 @@
   .bloody-grid [data-bg-size^="2x"] {
     width: 66.66666666666667%;
   }
-  .bloody-grid [data-bg-size$="x1"] {
-    height: 10%;
-  }
-  .bloody-grid [data-bg-size$="x2"] {
-    height: 20%;
-  }
 }
 @media only screen and (min-width:1401px) {
   .bloody-grid [data-bg-7="hide"] {
     display: none;
   }
   .bloody-grid[data-bg-rows-7="1"]:after {
-    margin-top: 57.14285714285714%;
+    margin-top: 14.285714285714285%;
+  }
+  .bloody-grid[data-bg-rows-7="1"] [data-bg-size$="x1"] {
+    height: 100%;
+  }
+  .bloody-grid[data-bg-rows-7="1"] [data-bg-size$="x2"] {
+    height: 200%;
   }
   .bloody-grid[data-bg-rows-7="2"]:after {
-    margin-top: 57.14285714285714%;
+    margin-top: 28.57142857142857%;
+  }
+  .bloody-grid[data-bg-rows-7="2"] [data-bg-size$="x1"] {
+    height: 50%;
+  }
+  .bloody-grid[data-bg-rows-7="2"] [data-bg-size$="x2"] {
+    height: 100%;
   }
   .bloody-grid[data-bg-rows-7="3"]:after {
-    margin-top: 57.14285714285714%;
+    margin-top: 42.857142857142854%;
+  }
+  .bloody-grid[data-bg-rows-7="3"] [data-bg-size$="x1"] {
+    height: 33.333333333333336%;
+  }
+  .bloody-grid[data-bg-rows-7="3"] [data-bg-size$="x2"] {
+    height: 66.66666666666667%;
   }
   .bloody-grid[data-bg-rows-7="4"]:after {
     margin-top: 57.14285714285714%;
+  }
+  .bloody-grid[data-bg-rows-7="4"] [data-bg-size$="x1"] {
+    height: 25%;
+  }
+  .bloody-grid[data-bg-rows-7="4"] [data-bg-size$="x2"] {
+    height: 50%;
   }
   .bloody-grid [data-bg-7^="0,"] {
     left: 0%;
@@ -218,11 +326,5 @@
   }
   .bloody-grid [data-bg-size^="2x"] {
     width: 28.571428571428573%;
-  }
-  .bloody-grid [data-bg-size$="x1"] {
-    height: 25%;
-  }
-  .bloody-grid [data-bg-size$="x2"] {
-    height: 50%;
   }
 }
