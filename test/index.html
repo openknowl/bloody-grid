@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="bloody-grid.css" />
+	
+		<style>
+		/* test page styles */
+		body {
+			margin: 0;
+			background: #000;
+		}
+		#grid > div {
+			text-align: center;
+			line-height: 100%;
+			color: #fff;
+			font-size: 125%;
+			line-height: 300%;
+		}
+		#grid > div:nth-child(5n+1) {
+			background: hsl(0, 100%, 50%);
+		}
+		#grid > div:nth-child(5n+2) {
+			background: hsl(15, 100%, 50%);
+		}
+		#grid > div:nth-child(5n+3) {
+			background: hsl(30, 100%, 50%);
+		}
+		#grid > div:nth-child(5n+4) {
+			background: hsl(45, 100%, 50%);
+		}
+		#grid > div:nth-child(5n) {
+			background: hsl(345, 100%, 50%);
+		}
+		</style>
+	</head>
+	
+	<body>
+	<section id="grid" class="bloody-grid" data-bg-rows-7="4" data-bg-rows-5="6" data-bg-rows-3="10">
+		<div data-bg-size="1x1" data-bg-7="0,0" data-bg-5="0,0" data-bg-3="0,0">1</div>
+		<div data-bg-size="2x2" data-bg-7="1,0" data-bg-5="1,0" data-bg-3="1,0">
+			<hgroup>
+				<h2>BloodyGrid</h2>
+				<h6>Full-screen Mosaic responsive grid system</h6>
+				<p>Openknowl</p>
+			</hgroup>
+		</div>
+		<div data-bg-size="2x1" data-bg-7="3,0" data-bg-5="3,0" data-bg-3="0,5">3</div>
+		<div data-bg-size="1x1" data-bg-7="5,0" data-bg-5="4,1" data-bg-3="2,5">4</div>
+		<div data-bg-size="1x2" data-bg-7="6,0" data-bg-5="4,3" data-bg-3="1,8">5</div>
+		<div data-bg-size="1x2" data-bg-7="0,1" data-bg-5="0,1" data-bg-3="0,1">6</div>
+		<div data-bg-size="1x2" data-bg-7="3,1" data-bg-5="3,1" data-bg-3="0,7">7</div>
+		<div data-bg-size="2x2" data-bg-7="4,1" data-bg-5="2,3" data-bg-3="1,6">8</div>
+		<div data-bg-size="2x1" data-bg-7="1,2" data-bg-5="1,2" data-bg-3="1,2">9</div>
+		<div data-bg-size="1x2" data-bg-7="6,2" data-bg-5="0,4" data-bg-3="2,8">10</div>
+		<div data-bg-size="2x1" data-bg-7="0,3" data-bg-5="0,3" data-bg-3="0,3">11</div>
+		<div data-bg-size="1x1" data-bg-7="2,3" data-bg-5="1,4" data-bg-3="0,4">12</div>
+		<div data-bg-size="1x1" data-bg-7="3,3" data-bg-5="4,2" data-bg-3="0,6">13</div>
+		<div data-bg-size="2x1" data-bg-7="4,3" data-bg-5="1,5" data-bg-3="1,4">14</div>
+	</section>
+</html>
