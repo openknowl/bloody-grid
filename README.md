@@ -1,4 +1,4 @@
-# bloody-grid v0.1 #
+# bloody-grid v0.1.2 #
 
 Bloody grid is a full-screen mosaic responsive web grid layout inspired by [Raymond Weil Inspiration](http://inspiration.raymond-weil.com/#!/inspiration "Raymond Weil") web page.
 

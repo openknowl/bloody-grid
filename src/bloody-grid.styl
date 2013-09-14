@@ -40,16 +40,16 @@ define-context($column-count)
 			for $i in (1 .. $box-grid-h)
 				& [data-{$prefix}-size$={'"x' + $i + '"'}]
 					height: ((100 / $container-row) * $i)%
+					
+			// Define rows.
+			for $row in (0 ... $row-count)
+				& [data-{$prefix}-{$column-count}$={'",' + $row + '"'}]
+					top: ((100 / $container-row) * $row)%
 	
 	// Define columns. 
 	for $column in (0 ... $column-count)
 		{$classname} [data-{$prefix}-{$column-count}^={'"' + $column + ',"'}]
 			left: ((100 / $column-count) * $column)%
-	
-	// Define rows.
-	for $row in (0 ... $row-count)
-		{$classname} [data-{$prefix}-{$column-count}$={'",' + $row + '"'}]
-			top: ((100 / $row-count) * $row)%
 	
 	// Define box sizes.
 	for $i in (1 .. $box-grid-w)
